@@ -31,10 +31,31 @@ app.post('/e40', function (req, res) {
     {
       call: "squeezed a trigger",
       response: "YUP"
+    },
+    {
+      call: "helped a brother out",
+      response: "YUP"
+    },
+    {
+      call: "you a sap",
+      response: "NOPE"
+    },
+    {
+      call: "stock rims on a scraper",
+      response: "NOPE"
+    },
+    {
+      call: "let me hold a couple dollars",
+      response: "NOPE"
+    },
+    {
+      call: "you a mack",
+      response: "YUP"
     }
   ];
+  var call = data.text.toLowerCase();
   var appropriate = _.find(choices, function(choice) {
-    return data.text.match(choice.call);
+    return call.match(choice.call);
   });
 
 
