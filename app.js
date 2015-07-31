@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // test route
 app.post('/e40', function (req, res) {
   console.dir(req);
-  var data = req.data;
+  var data = req.body;
 
   // if the token doesn't match, the request is not coming from Slack. 401 = unauthorized
   if (process.env.OUTGOING_WEBHOOK_TOKEN && data.token !== process.env.OUTGOING_WEBHOOK_TOKEN) {
