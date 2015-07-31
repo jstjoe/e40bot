@@ -1,0 +1,15 @@
+{
+  "name": "e40",
+  "version": "1.0.0",
+  "description": "everybody's got choices",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Joe McCarron",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.x.x",
+    "body-parser": "^1.x.x"
+  }
+}
