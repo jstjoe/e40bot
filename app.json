@@ -1,0 +1,12 @@
+{
+  "name": "e40bot",
+  "description": "Everybody's got choices.",
+  "keywords": ["node", "express", "e40", "choices", "slack"],
+  "env": {
+    "OUTGOING_WEBHOOK_TOKEN": {
+      "description": "Slack gives you this key to verify if the request came from Slack. You can find it on the Outgoing Webhook integration.",
+      "value": "",
+      "required": false
+    }
+  }
+}
